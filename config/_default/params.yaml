@@ -8,3 +8,4 @@ admin:
   cms: sveltiacms
   branch: main
   repo: pabloalgo/hugolify-lab
+  base_url: https://sveltia-cms-auth.pabloillescasburriel.workers.dev

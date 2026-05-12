@@ -2,6 +2,7 @@
   "htmlElements": {
     "tags": [
       "a",
+      "article",
       "body",
       "br",
       "button",
@@ -33,6 +34,7 @@
       "404-page",
       "banner",
       "banner-warning",
+      "block-timeline",
       "bottom",
       "breadcrumb-wrapper",
       "btn",
@@ -62,6 +64,7 @@
       "preload",
       "row",
       "section-contact",
+      "section-horarios-test",
       "section-legal-mentions",
       "section-persons",
       "section-posts",
@@ -70,9 +73,12 @@
       "sitemap-pages",
       "sitemap-persons",
       "sitemap-posts",
+      "step",
       "surtitle",
       "taxonomy-authors",
       "taxonomy-categories",
+      "text",
+      "timeline",
       "title",
       "toc",
       "top"
