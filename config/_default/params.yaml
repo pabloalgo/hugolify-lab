@@ -1,1 +1,10 @@
 _merge: deep
+
+title: Hugolify Lab
+description: "Prototipo Hugolify — laboratorio de frameworks para clientes"
+author: Pablo IB
+
+admin:
+  cms: sveltiacms
+  branch: main
+  repo: pabloalgo/hugolify-lab

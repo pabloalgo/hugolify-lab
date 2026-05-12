@@ -1,52 +1,35 @@
-![Twitter banner](https://user-images.githubusercontent.com/4457294/208064328-5bbf40e4-5520-41f4-8024-30c898c1a0e8.png)
+# Hugolify Lab
 
-# Hugolify template
+Prototipo del framework [Hugolify](https://www.hugolify.io/) como experimento del laboratorio de pabloib.
 
-Is a Github template for build easily a fast, accessible friendly and low carbon website!
+**Objetivo:** Evaluar Hugolify como base para sitios de clientes (migraciones WP → Hugo).
 
-## Live demos
+**URL:** https://hugolify.lab.pabloib.com/
+**CMS:** Sveltia en `/admin/`
+**ADR:** [ADR-007](https://github.com/pabloalgo/pabloib/blob/main/docs/decisions/ADR-007-COMPONENT-LIBRARY.md)
+**Fork:** [pabloalgo/hugolify-theme](https://github.com/pabloalgo/hugolify-theme)
 
-### Base
+## Setup
 
-**Netlify**
+```bash
+npm install
+hugo mod get
+hugo server -D
+```
 
-https://demo.hugolify.io/
+## Estructura
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5a4fa061-e7a5-4e66-9612-4fae713bda09/deploy-status)](https://app.netlify.com/sites/hugolify-demo/deploys)
+- `config/_default/` — Config Hugo (YAML)
+- `content/pages/` — Páginas con bloques (core theme)
+- `content/posts/` — Blog (hugolify-theme-posts)
+- `content/persons/` — Autores (hugolify-theme-persons)
 
-**Cloudflare Pages**
+## Modules
 
-https://hugolify.pages.dev/
-
-
-### Theme 1
-
-https://theme-1--hugolify-demo.netlify.app/
-
-### Theme 2
-
-https://theme-2--hugolify-demo.netlify.app/
-
-### Theme 3
-
-https://theme-3--hugolify-demo.netlify.app/
-
-### Theme 4
-
-https://theme-4--hugolify-demo.netlify.app/
-
-### Theme 5
-
-https://theme-5--hugolify-demo.netlify.app/
-
-### Products
-
-https://demo-products--hugolify-demo.netlify.app
-
-## Documentation
-
-https://www.hugolify.io/docs/
-
-## License
-
-Hugolify is free for personal or commercial projects (MIT license)
+- `hugolify-theme/v2` — Core layouts + blocks engine
+- `hugolify-theme-bootstrap` — Bootstrap 5 styling layer
+- `hugolify-admin` — CMS config generator (Sveltia/Decap/etc)
+- `hugolify-theme-posts` — Blog posts content type
+- `hugolify-theme-posts-categories` — Post categories taxonomy
+- `hugolify-theme-posts-authors` — Post authors taxonomy
+- `hugolify-theme-persons` — Person profiles

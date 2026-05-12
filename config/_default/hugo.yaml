@@ -1,7 +1,14 @@
-## LANGUAGE
-defaultContentLanguage: en
+baseURL: https://hugolify.lab.pabloib.com/
+languageCode: es-es
+defaultContentLanguage: es
+title: Hugolify Lab — Pablo IB
+timeZone: Europe/Madrid
 
-## ADVANCED
+languages:
+  es:
+    languageName: Español
+    weight: 1
+
 build:
   buildStats:
     disableClasses: false

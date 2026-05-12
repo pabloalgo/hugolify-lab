@@ -1,9 +1,15 @@
 imports:
-  # Content
-  # -> Hugolify content types and taxonomies available https://www.hugolify.io/docs/sections/
+  # Core theme (fork es pabloalgo/hugolify-theme pero module path es el original)
+  - path: github.com/hugolify/hugolify-theme/v2
 
-  # Core theme
-  - path: github.com/hugolify/hugolify-theme
+  # Styling layer
+  - path: github.com/hugolify/hugolify-theme-bootstrap
 
-  # CMS
+  # CMS admin (genera config Sveltia/Decap/etc)
   - path: github.com/hugolify/hugolify-admin
+
+  # Content modules (pages va en core theme)
+  - path: github.com/hugolify/hugolify-theme-posts
+  - path: github.com/hugolify/hugolify-theme-posts-categories
+  - path: github.com/hugolify/hugolify-theme-posts-authors
+  - path: github.com/hugolify/hugolify-theme-persons
